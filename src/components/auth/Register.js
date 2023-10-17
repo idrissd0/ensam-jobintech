@@ -1,16 +1,29 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../../firebase/config";
-
+import { useNavigate } from "react-router-dom";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // Convert the user object to a JSON string
+      const userJSON = JSON.stringify(user);
+      localStorage.setItem("user", userJSON);
+    } else {
+      localStorage.removeItem("user");
+    }
+  });
 
   const signUp = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
+        navigate('/')
       })
       .catch((error) => {
         console.log(error);

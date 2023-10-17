@@ -1,16 +1,33 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../../firebase/config";
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // Convert the user object to a JSON string
+      const userJSON = JSON.stringify(user);
+      localStorage.setItem("user", userJSON);
+    } else {
+      localStorage.removeItem("user");
+    }
+  });
+  
 
   const signIn = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
+        navigate('/')
       })
       .catch((error) => {
         console.log(error);
@@ -33,6 +50,7 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         ></input>
+        <p>you are not a member ?<Link to='/Register'>Register</Link></p>
         <button type="submit">Log In</button>
       </form>
     </div>
