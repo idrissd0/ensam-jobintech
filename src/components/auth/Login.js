@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { auth } from "../../firebase/config";
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom";
-
+import './Login.css'
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -35,25 +35,24 @@ const Login = () => {
   };
 
   return (
-    <div className="sign-in-container">
-      <form onSubmit={signIn}>
-        <h1>Log In to your Account</h1>
-        <input
-          type="email"
-          placeholder="Enter your email"
+      <div class="wrapper">
+    <form class="form-signin" onSubmit={signIn}>       
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="email" class="form-control" name="username" placeholder="Enter your email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        ></input>
-        <input
-          type="password"
-          placeholder="Enter your password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        ></input>
-        <p>you are not a member ?<Link to='/Register'>Register</Link></p>
-        <button type="submit">Log In</button>
-      </form>
-    </div>
+         onChange={(e) => setEmail(e.target.value)} required="" autofocus="" />
+      <input type="password" class="form-control" name="password"
+        placeholder="Enter your password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required=""/>      
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"/> Remember me
+      </label>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+    </form>
+  </div>
+    // </div>
   );
 };
 

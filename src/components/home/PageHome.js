@@ -14,6 +14,7 @@ function PageHome() {
       setEmail(user.email);
     } else {
       console.log('User data not found in localStorage');
+      navigate('/Login')
     }
   }, []);
 
