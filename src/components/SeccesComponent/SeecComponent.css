@@ -1,0 +1,30 @@
+#SecComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2em 0;
+
+}
+#SecComponent .SecInfo{
+    margin-bottom: 16px;
+}
+#SecComponent .SecInfo h1{
+    font-size:3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:#000000;
+}
+#SecComponent .SecInfo p{
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+#SecComponent .SecImage img{
+    width: 100%;
+}
+@media (width>768px) {
+    #SecComponent{
+        flex-direction: row;
+    }
+   }

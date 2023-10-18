@@ -1,0 +1,26 @@
+#Introduction{
+}
+#Introduction .IntrInfo{
+padding:2em 0;
+background-color: white;
+}
+#Introduction .IntrInfo h6{
+    color:#638C1C;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+#Introduction .IntrInfo h2{
+    color:#000000;
+    font-weight: 700;
+    margin-top:1em;
+}
+
+
+#Introduction .IntrMoreInformation .IntrItem {
+    display: flex;
+    flex-direction: column;
+
+}
+#Introduction .IntrMoreInformation .IntrItem div:nth-child(2){
+    background-color: white;
+}

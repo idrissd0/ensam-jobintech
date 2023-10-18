@@ -1,0 +1,21 @@
+#HeaderSecStroy{
+    background-color: white;
+    padding-top:4em;
+}
+
+#HeaderSecStroy p {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#HeaderSecStroy .storyCon{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width>768px) {
+    #HeaderSecStroy .storyCon{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+   }
