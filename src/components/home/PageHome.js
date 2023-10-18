@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { auth } from "../../firebase/config";
 import { signOut } from "firebase/auth";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import Navbar from './navbar.js';
+import Footer from './Footer';
 
 function PageHome() {
   const [email, setEmail] = useState('');
@@ -18,20 +20,13 @@ function PageHome() {
     }
   }, []);
 
-  const userSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        console.log("sign out successful");
-        localStorage.removeItem('user')
-        navigate('/login')
-      })
-      .catch((error) => console.log(error));
-  };
+
 
 
   return (
-    <div><p>{email}</p>
-    <button onClick={userSignOut} >LogOut</button>
+    <div>
+      <Navbar />
+      <Footer />
     </div>
   );
 }
