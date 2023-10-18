@@ -37,7 +37,7 @@ const Login = () => {
   return (
       <div class="wrapper">
     <form class="form-signin" onSubmit={signIn}>       
-      <h2 class="form-signin-heading">Please login</h2>
+      <h2 class="form-signin-heading">Connectez-vous à votre compte</h2>
       <input type="email" class="form-control" name="username" placeholder="Enter your email"
           value={email}
          onChange={(e) => setEmail(e.target.value)} required="" autofocus="" />
@@ -48,8 +48,10 @@ const Login = () => {
         required=""/>      
       <label class="checkbox">
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"/> Remember me
+        <p>Vous n'êtes pas membre ?<Link to="/register">Register</Link></p>
       </label>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+
+      <button class="btn btn-success btn-block w-100" type="submit">Login</button>   
     </form>
   </div>
     // </div>
