@@ -1,0 +1,52 @@
+/* .page-header{
+    
+} */
+.left-sec{
+    background-image: url('../../assets/ensetbanner_0.png');
+    background-color: transparent;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+.left-sec p{
+    color: black !important;
+    font-size: xx-large;
+    font-family: math;
+    font-weight: bolder;
+}
+
+  /* For small screens and smaller */
+@media (max-width: 768px) {
+    .right-sec img {
+        width: 100%;
+    }
+}
+
+/* For large screens and larger */
+@media (min-width: 1200px) {
+    .right-sec img {
+        width: 75%;
+    }
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+video{
+    width: 150px;
+    height: 150px;
+    
+}
