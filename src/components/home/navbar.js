@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import logoimg from "../../assets/logo-jobintech.png";
+import logoimg from "../../assets/ensam-logo-rb.png";
 import { auth } from "../../firebase/config";
 import { signOut } from "firebase/auth";
 
@@ -37,7 +37,7 @@ function Navbar() {
             <div class="container-fluid">
                 {/* small screen logo */}
                 <a class="navbar-brand d-block d-lg-none" href="#" >
-                        <img src={logoimg} alt="" srcset=""  id="sitelogo" style={{width: '150px'}} />
+                        <img src={logoimg} alt="" srcset=""  id="sitelogo" style={{width: '80px'}} />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@ function Navbar() {
 
                         {/* main site logo */}
                         <a class="navbar-brand d-none d-lg-block m-auto" href="/" >
-                            <img src={logoimg} alt="" srcset=""  id="sitelogo" style={{width: '250px'}} />
+                            <img src={logoimg} alt="" srcset=""  id="sitelogo" style={{width: '100px'}} />
                         </a>
                         
                         <li class="nav-item">

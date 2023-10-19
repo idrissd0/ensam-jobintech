@@ -1,13 +1,10 @@
-/* .page-header{
-    
-} */
-.left-sec{
+/* .left-sec{
     background-image: url('../../assets/ensetbanner_0.png');
     background-color: transparent;
     background-position: center;
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-}
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 .left-sec p{
     color: black !important;
@@ -16,37 +13,110 @@
     font-weight: bolder;
 }
 
-  /* For small screens and smaller */
+
+
+.ensam-intro .after-header p{
+    margin: 0 25px 0 25px;
+    align-self:center;
+    text-align: justify;
+}
+
+.ensam-intro .after-header .titre{
+    display: none;
+}
+
+/* ********** */
+
+.jobintech-intro .section-header img{
+    width: 25%;
+}
+
+.jobintech-intro .after-header .paragraphs .heading {
+    font-size: 50px;
+    color: #323e48;
+    text-align: left;
+    word-wrap: break-word;
+    font-weight: 700;
+    letter-spacing: -.02em;
+}
+
+.Partenaires{
+    background-color: #323e48;
+}
+
+.Partenaires h1{
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* .Partenaires-container img{
+    max-width: 80px !important;
+} */
+
+.Partenaires-container > div {
+    /* text-align: center; */
+    display: flex; /* Use flexbox to center vertically */
+    justify-content: center;
+    align-items: center; /* Center vertically */
+}
+
+/* .Partenaires-container > div img{
+    display: block; Ensures the image is treated as a block element
+    margin: auto; Center the image horizontally
+} */
+
+
+
+/* ************ */
 @media (max-width: 768px) {
-    .right-sec img {
-        width: 100%;
+    .ensam-intro .section-header> div img {
+        width: 40%;
     }
 }
 
-/* For large screens and larger */
+@media (min-width: 768px) {
+    .ensam-intro .section-header> div img {
+        width: 25%;
+    }
+}
+
 @media (min-width: 1200px) {
-    .right-sec img {
-        width: 75%;
+    .ensam-intro .section-header> div img {
+        width: 10%;
+    }
+}   
+
+.ensam-intro .after-header iframe{
+    margin: 25px 0 25px 0;
+    text-align: justify;
+    align-self:center;
+}
+
+/* ************** */
+
+@media (max-width: 1349px) {
+    .ensam-intro .after-header {
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+    }
+    .ensam-intro .after-header iframe{
+        margin: 0 0 0 0;
+    }
+    .ensam-intro .after-header p{
+        margin: 0 0 0 0;
+    }
+    .ensam-intro .after-header .titre{
+        display: block;
+        color: #1e639c;
+        text-transform: uppercase;
+        font-size: 22px;
+        line-height: 44px;
+        margin-bottom: 10px;
+    }
+    .jobintech-intro .section-header img{
+        width: 60%;
     }
 }
 
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-video{
-    width: 150px;
-    height: 150px;
-    
-}
