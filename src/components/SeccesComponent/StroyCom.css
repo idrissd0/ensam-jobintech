@@ -13,6 +13,9 @@
     margin-bottom: 1em;
 
 }
+#story p{
+    text-align: justify;
+}
 
 #story h2{
     color:#000000;
@@ -20,14 +23,14 @@
 }
 
 @media (width>768px) {
- #story{
-    width: calc(100vw/3.4);
- }
-#story h4{
-    font-size: 0.8em;
-}
-#story h2{
-    font-size:1.4em;
-}
+    #story{
+        width: calc(100vw/4.4);
+    }
+    #story h4{
+        font-size: 0.8em;
+    }
+    #story h2{
+        font-size:1em;
+    }
 
 }

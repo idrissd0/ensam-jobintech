@@ -3,7 +3,7 @@ import './SeecComponent.css'
 import SecStoryCom from "./SecStoryCom"
 const SecComponent = ()=>{
     return <>
-        <div id="SecComponent" className="Container">
+        <div id="SecComponent" className="container">
             <div className="SecInfo">
                 <h1>Témoignages de nos alumnis</h1>
                 <p>N'hésitez pas à explorer les témoignages de réussite de nos anciens élèves et à vous laisser inspirer par leur parcours extraordinaire.</p>

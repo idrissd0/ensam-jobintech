@@ -12,12 +12,12 @@ const SecStoryCom = ()=>{
 
     ])
     return <>
-        <div id="HeaderSecStroy">
-            <p className="Info">
+        <div id="HeaderSecStroy" >
+            <p className="Info container" >
                 Nous sommes fiers de mettre en lumière les parcours inspirants et les succès professionnels de nos anciens apprenants. Ces témoignages sont une véritable source d’inspiration pour tous ceux qui aspirent à une carrière florissante dans le domaine de la technologie.
                 Nos anciens élèves sont les preuves vivantes que la formation Jobintech peut ouvrir les portes vers des opportunités incroyables. À travers leurs expériences personnelles, ils vous raconteront leur voyage, depuis le moment où ils ont rejoint notre programme jusqu’à leur insertion professionnelle réussie.
             </p>
-            <div className="storyCon">
+            <div className="storyCon container">
                 {Story.map((item)=>{
                     return      <StroyCom className="stroyItem" img={item.img} 
                     name={item.name}

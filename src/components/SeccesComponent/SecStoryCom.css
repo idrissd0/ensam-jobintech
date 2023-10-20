@@ -1,9 +1,11 @@
 #HeaderSecStroy{
     background-color: white;
-    padding-top:4em;
+    padding-top: 1em;
 }
-
-#HeaderSecStroy p {
+#HeaderSecStroy .Info{
+    margin: 4em auto ;
+}
+#HeaderSecStroy > p {
     font-size: 1.1em;
     font-weight: 600;
 }
@@ -15,7 +17,10 @@
 @media (width>768px) {
     #HeaderSecStroy .storyCon{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+    }
+    #HeaderSecStroy p {
+        font-size: .8em;
     }
    }

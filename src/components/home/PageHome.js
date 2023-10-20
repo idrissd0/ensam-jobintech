@@ -11,6 +11,17 @@ import MdTransitionReforme from "../../assets/ministère-de-la-transition-numér
 
 
 function PageHome() {
+  
+  // useEffect(() => {
+  //   const userJSON = localStorage.getItem('user');
+  //   if (userJSON) {
+  //     const user = JSON.parse(userJSON);
+  //     setEmail(user.email);
+  //   } else {
+  //     console.log('User data not found in localStorage');
+  //     navigate('/Login')
+  //   }
+  // }, []);
 
   return (
     <div className='container-fluid'>

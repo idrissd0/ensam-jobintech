@@ -16,6 +16,7 @@ function Navbar() {
       setEmail(user.email);
     } else {
       console.log('User data not found in localStorage');
+      navigate('/login');
     }
   }, []);
 
@@ -68,7 +69,7 @@ function Navbar() {
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/">
                                         Qui sommes-nous?
                                     </a>
                                 </li>
@@ -80,8 +81,8 @@ function Navbar() {
                             Nos formations
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/formation">Développement Fullstack PHP</a></li>
-                                <li><a class="dropdown-item" href="#">AData SQL Webservices</a></li>
+                                <li><a class="dropdown-item" href="/formation-fullstack">Développement Fullstack PHP</a></li>
+                                <li><a class="dropdown-item" href="/formation-sql">AData SQL Webservices</a></li>
                             </ul>
                         </li>
 
