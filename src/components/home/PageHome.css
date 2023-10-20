@@ -6,48 +6,46 @@
     background-size: cover;
 } */
 
-.left-sec p{
-    color: black !important;
-    font-size: xx-large;
-    font-family: math;
-    font-weight: bolder;
+.left-sec p {
+  color: black !important;
+  font-size: xx-large;
+  font-family: math;
+  font-weight: bolder;
 }
 
-
-
-.ensam-intro .after-header p{
-    margin: 0 25px 0 25px;
-    align-self:center;
-    text-align: justify;
+.ensam-intro .after-header p {
+  margin: 0 25px 0 25px;
+  align-self: center;
+  text-align: justify;
 }
 
-.ensam-intro .after-header .titre{
-    display: none;
+.ensam-intro .after-header .titre {
+  display: none;
 }
 
 /* ********** */
 
-.jobintech-intro .section-header img{
-    width: 25%;
+.jobintech-intro .section-header img {
+  width: 25%;
 }
 
 .jobintech-intro .after-header .paragraphs .heading {
-    font-size: 50px;
-    color: #323e48;
-    text-align: left;
-    word-wrap: break-word;
-    font-weight: 700;
-    letter-spacing: -.02em;
+  font-size: 50px;
+  color: #323e48;
+  text-align: left;
+  word-wrap: break-word;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.Partenaires{
-    background-color: #323e48;
+.Partenaires {
+  background-color: #323e48;
 }
 
-.Partenaires h1{
-    font-size: 45px;
-    color: #ffffff;
-    text-align: center;
+.Partenaires h1 {
+  font-size: 45px;
+  color: #ffffff;
+  text-align: center;
 }
 
 /* .Partenaires-container img{
@@ -55,10 +53,10 @@
 } */
 
 .Partenaires-container > div {
-    /* text-align: center; */
-    display: flex; /* Use flexbox to center vertically */
-    justify-content: center;
-    align-items: center; /* Center vertically */
+  /* text-align: center; */
+  display: flex; /* Use flexbox to center vertically */
+  justify-content: center;
+  align-items: center; /* Center vertically */
 }
 
 /* .Partenaires-container > div img{
@@ -66,57 +64,54 @@
     margin: auto; Center the image horizontally
 } */
 
-
-
 /* ************ */
 @media (max-width: 768px) {
-    .ensam-intro .section-header> div img {
-        width: 40%;
-    }
+  .ensam-intro .section-header > div img {
+    width: 40%;
+  }
 }
 
 @media (min-width: 768px) {
-    .ensam-intro .section-header> div img {
-        width: 25%;
-    }
+  .ensam-intro .section-header > div img {
+    width: 25%;
+  }
 }
 
 @media (min-width: 1200px) {
-    .ensam-intro .section-header> div img {
-        width: 10%;
-    }
-}   
+  .ensam-intro .section-header > div img {
+    width: 10%;
+  }
+}
 
-.ensam-intro .after-header iframe{
-    margin: 25px 0 25px 0;
-    text-align: justify;
-    align-self:center;
+.ensam-intro .after-header iframe {
+  margin: 25px 0 25px 0;
+  text-align: justify;
+  align-self: center;
 }
 
 /* ************** */
 
 @media (max-width: 1349px) {
-    .ensam-intro .after-header {
-        display: flex;
-        flex-direction: column;
-        height: 650px;
-    }
-    .ensam-intro .after-header iframe{
-        margin: 0 0 0 0;
-    }
-    .ensam-intro .after-header p{
-        margin: 0 0 0 0;
-    }
-    .ensam-intro .after-header .titre{
-        display: block;
-        color: #1e639c;
-        text-transform: uppercase;
-        font-size: 22px;
-        line-height: 44px;
-        margin-bottom: 10px;
-    }
-    .jobintech-intro .section-header img{
-        width: 60%;
-    }
+  .ensam-intro .after-header {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+  }
+  .ensam-intro .after-header iframe {
+    margin: 0 0 0 0;
+  }
+  .ensam-intro .after-header p {
+    margin: 0 0 0 0;
+  }
+  .ensam-intro .after-header .titre {
+    display: block;
+    color: #1e639c;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+  .jobintech-intro .section-header img {
+    width: 60%;
+  }
 }
-

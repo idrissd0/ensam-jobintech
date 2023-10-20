@@ -1,26 +1,26 @@
-#HeaderSecStroy{
-    background-color: white;
-    padding-top: 1em;
+#HeaderSecStroy {
+  background-color: white;
+  padding-top: 1em;
 }
-#HeaderSecStroy .Info{
-    margin: 4em auto ;
+#HeaderSecStroy .Info {
+  margin: 4em auto;
 }
 #HeaderSecStroy > p {
-    font-size: 1.1em;
-    font-weight: 600;
+  font-size: 1.1em;
+  font-weight: 600;
 }
-#HeaderSecStroy .storyCon{
-    display: flex;
-    flex-direction: column;
+#HeaderSecStroy .storyCon {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width>768px) {
-    #HeaderSecStroy .storyCon{
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    #HeaderSecStroy p {
-        font-size: .8em;
-    }
-   }
+  #HeaderSecStroy .storyCon {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #HeaderSecStroy p {
+    font-size: 0.8em;
+  }
+}
